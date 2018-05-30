@@ -23,5 +23,35 @@ class Topografia(models.Model)
     lluvias = Categorizacion
     radiacion = Categorizacion
 
+class Fertilizante()
+    porcentajeN = models.DecimalField()
+    gramP = models.DecimalField()
+    gramK = models.DecimalField()
+
+class ManejoDelSuelo(models.Model)
+    muestreo = models.IntegerField()
+    recuperacion = Categorizacion
+    espaciamiento = Categorizacion
+    tipoSuelo = TipoSuelo
+
+class CondicionesClimaticas(models.Model)
+    periodosSequia = Categorizacion
+    hayInundacion = models.BooleanField()
+    temporadaDeFrio = models.BooleanField()
+
+class PlagasYEnfermedades(models.Model)
+    nombrePlaga = models.CharField(max_lenght = 50)
+    recomendacion = models.CharField(max_lenght = 200)
+
+class FactorAnual(models.Model)
+    anomaliasEnPlantacion = models.CharField(max_lenght=50)
+    fechaQueEmerge = models.DateField()
+    hayMalezas = models.BooleanField()
+    condicionesClimaticas = CondicionesClimaticas
+    plagasYEnfermedades = PlagasYEnfermedades
+    
+
+
+
 
 
