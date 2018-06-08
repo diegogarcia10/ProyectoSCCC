@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'SCCC.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':  'django.db.backends.postgresql_psycopg2',
-        'NAME': 'proyecto',
-        'USER': 'postgres',
-        'PASSWORD': 'Ingeniero',
+        'NAME': 'mm14022',
+        'USER': 'mm14022',
+        'PASSWORD': 'mm14022',
         'HOST': 'localhost',
         'PORT': 5432,
     }
