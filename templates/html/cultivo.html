@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE HTML>
 <!--
 	Arcana by HTML5 UP
@@ -10,7 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -21,13 +22,13 @@
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html" id="logo">Simulaci&oacute;n de Cultivo y Cosecha de Ca&ntilde;a de Az&uacute;car <em>by GT06</em></a></h1>
+						<h1><a href="/cultivo/inicio" id="logo">Simulaci&oacute;n de Cultivo y Cosecha de Ca&ntilde;a de Az&uacute;car <em>by GT06</em></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li>
-									<a href="index.html">Inicio</a>
+									<a href="/cultivo/inicio">Inicio</a>
 								</li>
 								<li>
 									<a href="#">Menu</a>
@@ -46,10 +47,10 @@
 										<li><a href="#">Simulaci&oacute;n PostProduccion</a></li>
 									</ul>
 								</li>
-								<li class="current"><a href="cultivo.html">Cultivo</a></li>
-								<li><a href="cosecha.html">Cosecha</a></li>
-								<li><a href="investigacion.html">Investigaci&oacute;n</a></li>
-								<li><a href="no-sidebar.html">Usuario</a>
+								<li class="current"><a href="/cultivo/cultivo">Cultivo</a></li>
+								<li><a href="/cultivo/cosecha">Cosecha</a></li>
+								<li><a href="/cultivo/investigacion">Investigaci&oacute;n</a></li>
+								<li><a href="/cultivo/user">Usuario</a>
 									<ul>
 										<li><a href="#">Datos de Usuario</a>
 											<ul>
@@ -203,7 +204,7 @@
 												</tbody>
 											</table> -->
 											<footer>
-												<a href="analisis.html#nav" class="button">Mostrar el an&aacute;lisis</a>
+												<a href="/cultivo/analisis#nav" class="button">Mostrar el an&aacute;lisis</a>
 											</footer>
 										</section>
 
@@ -235,7 +236,7 @@
 												<p>Sidebar on the left, content on the right.</p>
 											</header>
 
-											<span class="image featured"><img src="images/banner.jpg" alt="" /></span>
+											<span class="image featured"><img src="{% static 'images/banner.jpg' %}" alt="" /></span>
 
 											
 											<h3>Valores Promedio</h3>
@@ -369,12 +370,12 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
 
 	</body>
 </html>
