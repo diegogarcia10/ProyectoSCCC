@@ -16,9 +16,6 @@ class User(models.Model):
     psword = models.CharField(max_length=30)
 
 
-#Factor Suelo
-
-
 class Topografia(models.Model):
     topografia = models.CharField(max_length=30)
     descipcion = models.CharField(max_length=200)
