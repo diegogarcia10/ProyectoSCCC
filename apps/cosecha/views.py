@@ -4,4 +4,4 @@ from django.views.generic import TemplateView
 
 
 class Cosecha(TemplateView):
-    template_name = 'html/cosecha.html'
+    template_name = 'html/../../templates/cosecha.html'

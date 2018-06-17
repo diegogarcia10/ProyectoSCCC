@@ -6,5 +6,5 @@ from django.views.generic import TemplateView
 class Index(TemplateView):
     template_name = 'Login/index.html'
 class Usuario(TemplateView):
-    template_name = 'html/user.html'
+    template_name = 'html/../../templates/user.html'
 

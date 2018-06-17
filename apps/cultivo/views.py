@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 
 class Index(TemplateView):
-    template_name = 'html/index.html'
+    template_name = 'html/../../templates/index.html'
 
 class Cultivo(TemplateView):
-    template_name = 'html/cultivo.html'
+    template_name = 'html/../../templates/cultivo.html'
