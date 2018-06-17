@@ -18,7 +18,10 @@ from django.conf.urls import url, include
 from django.contrib.auth.views import login,logout_then_login
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^',include('apps.cultivo.urls',namespace="cultivo_vacio")),
     url(r'^cultivo/',include('apps.cultivo.urls',namespace="cultivo")),
+    url(r'^cultivo/',include('apps.cosecha.urls',namespace="cosecha")),
+    url(r'^cultivo/',include('apps.usuario.urls',namespace="usuario")),
     url(r'^accounts/login/', login, {'template_name':'Login/index.html'}, name='login' ),
     url(r'^logout/',logout_then_login, name='logout'),
 ]
